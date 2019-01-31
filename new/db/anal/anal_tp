@@ -186,6 +186,7 @@ aa
 aaft
 s main
 afv~sign
+afv~uint
 EXPECT=<<RUN
 var signed int var_34h @ rbp-0x34
 var signed int var_30h @ rbp-0x30
