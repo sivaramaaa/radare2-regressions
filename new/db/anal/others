@@ -1674,8 +1674,8 @@ fastcall
 |           0x0804841b      55             push ebp
 |           0x0804841c      89e5           mov ebp, esp
 |           0x0804841e      83ec28         sub esp, 0x28               ; '('
-|           0x08048421      894de4         mov dword [var_1ch], ecx  ; arg1
-|           0x08048424      8955e0         mov dword [var_20h], edx  ; arg2
+|           0x08048421      894de4         mov dword [var_1ch], ecx    ; arg1
+|           0x08048424      8955e0         mov dword [var_20h], edx    ; arg2
 |           0x08048427      8b55e4         mov edx, dword [var_1ch]
 |           0x0804842a      8b45e0         mov eax, dword [var_20h]
 |           0x0804842d      01d0           add eax, edx
@@ -1920,7 +1920,7 @@ EOF
 CMDS=<<EOF
 af
 afvt var_30h char
-afvb~l_30h
+afvb~_30h
 EOF
 RUN
 
@@ -1967,10 +1967,10 @@ NAME=afvR and afvW test
 FILE=../bins/elf/crackme0x05
 EXPECT=<<EOF
 
- var_78h  0x8048577,0x804858a
-  var_4h  
- var_78h  
-  var_4h  0x804857a
+   var_78h  0x8048577,0x804858a
+    var_4h
+   var_78h  
+    var_4h  0x804857a
 EOF
 CMDS=<<EOF
 aa

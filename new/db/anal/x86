@@ -116,7 +116,7 @@ EXPECT=<<EOF
 |           0x08048441      ff75f4         push dword [var_ch]
 EOF
 CMDS=<<EOF
-aa ; s sym.fastcaslled ; afc fastcall ; afva ; ?e ; pdf~arg,local
+aa ; s sym.fastcaslled ; afc fastcall ; afva ; ?e ; pdf~arg,var
 EOF
 RUN
 
